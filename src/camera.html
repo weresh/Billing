@@ -7,46 +7,242 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<title>Payments</title>
 </head>
 <body >
-    <div class="font-[Lato] container mx-auto ">
-        <div class=" flex ">
-            <div class=" pt-40 ml-16 ">
-                <h1 class="text-[#06040A] text-7xl font-bold items-center ">Design products</h1><br>
-                <h1 class="text-[#06040A] text-7xl font-bold items-center pb-8 ml-14">Deliver experience</h1>
-                <div class="px-9 border-l-[6px] border-solid border-[#06040A]">
-                    <p class="text-[#06040A] text-2xl font-normal pb-6 w-[632px] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Cursus imperdiet sed id elementum. Quam vel aliquam sit <br>vulputate. Faucibus nec gravida ipsum pulvinar vel. Lorem<br> ipsum dolor sit amet, consectetur adipiscing elit. Cursus<br> imperdiet sed id elementum.
-                    </p>
-                    <button class="bg-[#06040A] py-6 px-16 rounded-[40px] text-[#FFFFFF] text-[22px] font-medium">Get started</button>
-                </div>
-            </div>
-            <div class=" mt-20 hidden md:block">
-                <div class="bg-[url(images/logo.png)] w-[131px] h-[130.54px] bg-no-repeat ml-[480px]"></div>
-                <div class="bg-[url(images/camera.png)] w-[616px] h-[440.91px] bg-no-repeat"></div>
-            </div>
-        </div>
-        <div class=" mt-20 md:hidden">
-            <div class="bg-[url(images/logo.png)] w-[131px] h-[130.54px] bg-no-repeat ml-[480px]"></div>
-            <div class="bg-[url(images/camera.png)] w-[616px] h-[440.91px] bg-no-repeat"></div>
-        </div>
-        <div class="flex mt-[72px] ml-16 mb-16 ">
-            <div class="text-[#06040A] px-9 py-12 bg-[#FFFFFF]">
-                <h3 class=" text-2xl font-bold">Title 1</h3>
-                <p class="text-lg font-light pt-4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br>imperdiet sed id elementum. <br>Quam vel aliquam sit vulputate.</p>
-            </div>
-            <div class="text-[#06040A] px-9 py-12 bg-[#E2E7F1]">
-                <h3 class=" text-2xl font-bold">Title 2</h3>
-                <p class="text-lg font-light pt-4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br>imperdiet sed id elementum. <br>Quam vel aliquam sit vulputate.</p>
-            </div>
-            <div class="text-[#06040A] px-9 py-12 bg-[#FFFFFF]">
-                <h3 class=" text-2xl font-bold">Title 3</h3>
-                <p class="text-lg font-light pt-4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br>imperdiet sed id elementum. <br>Quam vel aliquam sit vulputate.</p>
-            </div>
-            <div class="text-[#06040A] px-9 py-12 bg-[#E2E7F1]">
-                <h3 class=" text-2xl font-bold">Title 4</h3>
-                <p class="text-lg font-light pt-4">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br>imperdiet sed id elementum. <br>Quam vel aliquam sit vulputate.</p>
-            </div>
-        </div>
+    <div class="flex w-full items-stretch">
+      <div class="w-[100%] h-[100%] relative bg-white flex justify-between">
+        <!-- Dashboard -->
+    <div class=" w-[19%] h-max bg-white  justify-start items-start inline-flex border-r border-gray-200">
     </div>
+        <!-- Main content  -->
+        <div
+          class="w-full px-8"
+          x-data="{ paginationOpen: false, addMemberModalOpen:false, importModalOpen:false }"
+          x-on:keydown.escape.window="paginationOpen = false"
+        >
+          <div>
+            <h1 class="self-stretch text-gray-900 text-3xl font-semibold mt-8">Payments</h1>
+            <h2 class="w-[1096px] text-slate-600 text-base font-normal leading-normal">Lörem ipsum tin ses. Talpenna retrenera tinening semitris. Rod karosam, kvasir antev.</h2>
+          </div>
+          <!-- Table -->
+          <div class="mt-8">
+            <!--  -->
+            <div class="flex flex-col xl:flex-row items-end xl:items-center w-full gap-3">
+              <!-- Search -->
+              <div class="w-full border border-gray-200 rounded-lg">
+                <div class="relative rounded-md shadow-sm">
+                  <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.5 17.5L14.5834 14.5833M16.6667 9.58333C16.6667 13.4954 13.4954 16.6667 9.58333 16.6667C5.67132 16.6667 2.5 13.4954 2.5 9.58333C2.5 5.67132 5.67132 2.5 9.58333 2.5C13.4954 2.5 16.6667 5.67132 16.6667 9.58333Z"
+                        stroke="#667085"
+                        stroke-width="1.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                      </path>
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="py-1.5 pl-10 "
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap lg:flex-nowrap gap-3 items-center">
+                <!-- Filters -->
+                <button class="px-4 py-2.5 bg-slate-50 hover:bg-slate-100 shadow-sm border rounded-lg border-slate-50 flex gap-x-2 items-center justify-center">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 10H15M2.5 5H17.5M7.5 15H12.5"
+                      stroke="#0D51D9"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                    </path>
+                  </svg>
+                  <p class="text-sm font-semibold leading-tight text-blue-700">Filters</p>
+                </button>
+                <button class="px-4 py-2.5 bg-white shadow-sm hover:bg-gray-50 border rounded-lg border-gray-300 flex gap-x-2 items-center justify-center">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.66675 14.1667L10.0001 17.5M10.0001 17.5L13.3334 14.1667M10.0001 17.5V10M16.6667 13.9524C17.6847 13.1117 18.3334 11.8399 18.3334 10.4167C18.3334 7.88536 16.2814 5.83333 13.7501 5.83333C13.568 5.83333 13.3976 5.73833 13.3052 5.58145C12.2185 3.73736 10.2121 2.5 7.91675 2.5C4.46497 2.5 1.66675 5.29822 1.66675 8.75C1.66675 10.4718 2.36295 12.0309 3.48921 13.1613"
+                      stroke="#344054"
+                      stroke-width="1.66667"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                    </path>
+                  </svg>
+                  <span class="text-sm font-semibold leading-tight text-slate-700">Export</span>
+                </button>
+              </div>
+            </div>
+            <!-- Desktop Table -->
+            
+            <div class="w-full">
+            <table class="w-full divide-y divide-gray-300   justify-start item-start  border border-gray-200 rounded-lg ">
+                <thead>
+                  <tr>
+                    <th scope="col" class=" py-3.5  text-left text-sm font-semibold text-gray-900  justify-start item-start pl-4">Transaction No</th>
+                    <th scope="col" class="  py-3.5 text-left text-sm font-semibold text-gray-900 justify-start item-start">Paid by</th>
+                    <th scope="col" class="  py-3.5 text-left text-sm font-semibold text-gray-900 justify-start item-start">Date and Time</th>
+                    <th scope="col" class=" py-3.5 text-left text-sm font-semibold text-gray-900 justify-start item-start">Amount</th>
+                    <th scope="col" class="  py-3.5 text-left text-sm font-semibold text-gray-900 justify-start item-start">Invoice Ref</th>
+                    <th scope="col" class="  py-3.5 text-left text-sm font-semibold text-gray-900 justify-start item-start">Service</th>
+                    <th scope="col" class=" relative py-3.5 pl-3 pr-4 sm:pr-0"></th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 ml-4">
+                  <!-- Row1 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Nicole Musundi</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Park Entry</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!-- Row2 -->
+                  <tr class="">
+                    <td class=" whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400">Value Chain Factory</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400">Bike Renting</td>
+                    <td class=" whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4 text-right">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!-- Row3 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Derrick Ogare</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Bike Renting</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!-- Row4 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Silas Omenda</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Park Entry</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!-- Row5 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dennis Kamau</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Park Entry</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!-- Row6 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Don Aleke</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Park Entry</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                    <!-- Row7 -->
+                  <tr class="">
+                    <td class="whitespace-nowrap py-4  text-sm font-medium text-gray-900 pl-4">TR098767898</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Spencer Owino</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Dec 1, 2022 9:00 am</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">KES 1,000</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Invoice #007 – Dec 202222</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400">Bike Renting</td>
+                    <td class="whitespace-nowrap  py-4 text-sm text-gray-400 inline-flex gap-4">
+                      <img src="Assets/EditIcon.png" class="min-w-5 h-5" alt="">
+                      <img src="Assets/VeiwIcon.png" class="min-w-5 h-5" alt="">
+                    </td>
+                   </tr>
+                   <!--<
+                    <td class="inline-flex justify-between gap-8 w-full">
+                      <div class="h-9 justify-start items-center gap-4 flex">
+                        <div class="self-stretch justify-start items-center gap-4 flex">
+                          <div class="grow shrink basis-0 flex-col justify-start items-start gap-2 inline-flex">
+                            <div class="self-stretch h-9 flex-col justify-start items-start gap-1.5 flex">
+                              <div class="self-stretch px-3.5 py-1.5 bg-white rounded-lg shadow border border-gray-300 justify-start items-center gap-2 inline-flex">
+                                <div class="grow shrink basis-0 h-6 justify-start items-center  flex">
+                                  <div class="text-gray-900 text-base font-medium leading-normal">10</div>
+                                </div>
+                                <div class="w-4 h-4 relative align-top -mt-3">
+                                  <img src="src/Assets/chevronDown.png" alt="" class="rotate-180">
+                                  <img src="src/Assets/chevronDown.png">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-slate-700 text-sm font-medium leading-tight whitespace-nowrap">Entries Per Page</div>
+                      </div>
+                      <div class="justify-end items-start gap-3 flex">
+                        <div class="px-3.5 py-2 bg-white rounded-lg shadow border border-gray-300 justify-center items-center gap-2 flex">
+                          <div class="text-slate-700 text-sm font-semibold leading-tight">Previous</div>
+                        </div>
+                        <div class="px-3.5 py-2 bg-white rounded-lg shadow border border-gray-300 justify-center items-center gap-2 flex">
+                          <div class="text-slate-700 text-sm font-semibold leading-tight">Next</div>
+                        </div>
+                      </div>
+                    </td>
+                   </tr>
+      
+                  <!-- More people... -->
+                </tbody>
+              </table></div>
+        </div>
+       
 </body>
 </html>

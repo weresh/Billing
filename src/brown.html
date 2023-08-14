@@ -5,46 +5,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="container mx-auto max-w-[1440px]">
-    <div class="flex ml-20">
-        <div class="mt-40 p-5">
-                <h1 class="text-[64px] font-bold text-slate-950">Listen to yourself</h1>
-                <h1 class="text-[64px] font-bold text-slate-950">Follow your heart</h1>
-                <p class="text-2xl font-light pt-6 pb-3">Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Saepe velit maiores<br> corporis molestiae in sed placeat porro.<br> Ea autem nulla architecto sequi magni minima</p>
-                <button class="text-xl text-[#2C1001] border-none bg-[#FFDE81] rounded-[36px] px-10 py-[30px] mt-10" >Download the app</button>
-        </div>
-        <div class="ml-10 mt-24">
-            <div class="z-1">
-                <img class=" relative z-10 w-22 h-22 ml-80 mt-40 mb-[-220px] "src="images/Portal.png">
-                <p class="w-64 h-[340px] z-1 bg-[#2A211C] rotate-[25deg] ml-[180px] -mb-[450px] border-none "></p>
-            </div>
-            <div class="relative z-10 -mt-96">
-                <img class="w-28 h-28 -mb-10 -ml-10" src="images/Star 1.png">
-                <img class="w-22 h-22 ml-40  -mb-40" src="images/Portal.png">
-                <p class="w-80 h-[450px]  bg-[#FFDD81]"></p>
-                <img class="w-22 h-22 -mt-60" src="images/Heart.png">
-                <img class="w-22 h-22 -mt-52" src="images/phone.png">
-                <img class=" ml-[500px] mt-[-230px] w-28 h-28"  src="images/Star 2.png">
-            </div>
-        </div>
+    <div class="w-[100%] h-[100%] relative bg-white">
+        <!-- Dashboard -->
+    <div class=" w-[18%] h-max bg-white  justify-start items-start inline-flex border-r border-gray-200">
     </div>
-    <div class="text-white font-semibold  rounded-3xl bg-[#49342F] py-6 px-24 flex ml-20  justify-around">
-            <div class="">
-                <p class="text-2xl font-semibold ">4.9</p>
-                <hr class="w-7 h-1 bg-white my-3"></hr>
-                <p class="text-base font-normal">Lorem ipsum <br>dolor amet </p>
+        <!-- Nav -->
+          <div class=" left-[280px] top-[32px] absolute flex-col justify-start items-start gap-6 inline-flex  w-[81%]  ">
+            <div class="self-stretch  px-8 flex-col justify-start items-start gap-6 flex ">
+              <div class="justify-center items-center gap-2 inline-flex">
+                <div class="w-5 h-5 relative"><img src="src/Assets/ArrowLeft.png" alt="">
+                </div>
+                <div class="text-blue-700 text-sm font-semibold leading-tight">Back to settings</div>
+              </div>
+              <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
+                <div class="self-stretch justify-start items-start gap-4 inline-flex">
+                  <div class="grow shrink basis-0 flex-col justify-start items-start gap-5 inline-flex pb-11">
+                    <div class="self-stretch text-gray-900 text-3xl font-semibold leading-[38px]">Profile</div>
+                    <div class="self-stretch text-slate-600 text-base font-normal leading-normal  border-b border-[#EAECF0] pb-11">Lörem ipsum tin ses. Talpenna retrenera tinening semitris. Rod karosam, kvasir antev. </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="">
-                <p class="text-2xl font-semibold ">876K</p>
-                <hr class="w-7 h-1 bg-white my-3"></hr>
-                <p class="text-base font-normal">Lorem ipsum <br>dolor amet </p>
+          </div>
+          <div class="w-[81%]  px-8 left-[280px] top-[195px] absolute flex-col justify-start items-start gap-8 inline-flex ">
+            <div class="self-stretch  flex-col justify-start items-start gap-6 flex">
+              <div class="self-stretch h-14 flex-col justify-start items-start gap-5 flex">
+                <div class="self-stretch justify-start items-start gap-4 inline-flex">
+                  <div class="grow shrink basis-0 self-stretch flex-col between items-start gap-1 inline-flex">
+                    <div class="self-stretch text-gray-900 text-lg font-semibold leading-7">Your Profile</div>
+                    <div class="self-stretch text-slate-600 text-base font-normal leading-normal">Lörem ipsum tin ses. Rod karosam, kvasir antev. </div>
+                  </div>
+                </div>
+              </div>
+              <div class="self-stretch  flex-col justify-start items-start gap-5 flex border-b border-[#EAECF0]">
+                <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
+                  <div class="w-[698px] justify-start items-start inline-flex">
+                    <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Full Name</div>
+                    <div class="grow shrink basis-0 text-slate-600 text-sm font-normal leading-tight">Nicole Musundi</div>
+                  </div>
+                  <div class="justify-start items-center gap-2.5 inline-flex">
+                    <div class="justify-start items-start flex">
+                      <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Phone Number</div>
+                      <div class="w-[210px] text-slate-600 text-sm font-normal leading-tight">07*****038</div>
+                    </div>
+                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
+                  </div>
+                  <div class="justify-start items-center gap-2.5 inline-flex">
+                    <div class="justify-start items-start flex">
+                      <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Email Address</div>
+                      <div class="w-[210px] text-slate-600 text-sm font-normal leading-tight">n********ndi@gmail.com</div>
+                    </div>
+                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
+                  </div>
+                  <div class="justify-start items-center gap-2.5 inline-flex">
+                    <div class="justify-start items-start flex">
+                      <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Password</div>
+                      <div class="w-[210px] text-slate-600 text-base font-normal leading-tight tracking-[3.04px]">********</div>
+                    </div>
+                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
+                  </div>
+                </div>
+                <div class="self-stretch h-px bg-gray-200"></div>
+              </div>
             </div>
-            <div>
-                <p class="text-2xl font-semibold ">no.1 </p>
-                <hr  class="w-7 h-1 bg-white my-3"></hr>
-                <p class="text-base font-normal">Lorem ipsum <br>dolor amet </p>
+            <div class="self-stretch  flex-col justify-start items-start gap-6 flex">
+              <div class="self-stretch h-14 flex-col justify-start items-start gap-5 flex">
+                <div class="self-stretch justify-start items-start gap-4 inline-flex">
+                  <div class="grow shrink basis-0 self-stretch flex-col justify-center items-start gap-1 inline-flex">
+                    <div class="self-stretch text-gray-900 text-lg font-semibold leading-7">Organisation Profile</div>
+                    <div class="self-stretch text-slate-600 text-base font-normal leading-normal">Lörem ipsum tin ses. Rod karosam, kvasir antev. </div>
+                  </div>
+                </div>
+              </div>
+              <div class="self-stretch flex-col justify-start items-start gap-5 flex ">
+                <div class="self-stretch h-16 flex-col justify-start items-start gap-5 flex">
+                  <div class="justify-start items-center gap-2.5 inline-flex">
+                    <div class="justify-start items-start flex">
+                      <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Organisation Name</div>
+                      <div class="w-[210px] text-slate-600 text-sm font-normal leading-tight">Peneli Enterprises</div>
+                    </div>
+                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
+                  </div>
+                  <div class="w-[698px] justify-start items-start inline-flex">
+                    <div class="w-[237px] text-slate-700 text-sm font-medium leading-tight">Type of Organisation</div>
+                    <div class="grow shrink basis-0 text-slate-600 text-sm font-normal leading-tight">Chama</div>
+                  </div>
+                </div>
+                <div class="self-stretch h-px bg-gray-200 border-b border-[#EAECF0]"></div>
+              </div>
             </div>
-        
-    </div>
+          </div>
+          
+        </div>
 
 </body>
 </html>
