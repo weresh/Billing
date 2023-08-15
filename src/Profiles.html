@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="container mx-auto ">
-    <div class="w-[100%] h-[100%] relative bg-white font-[inter] my-8">
+    <div class="w-[100%] h-[100%] relative bg-white font-[inter] mb-8">
         <!-- Dashboard -->
     <div class=" w-[18%] h-max bg-white  justify-start items-start inline-flex border-r border-gray-200">
     </div>
         <!-- Nav -->
           <div class=" left-[19%] top-8 absolute flex-col justify-start items-start gap-6 inline-flex  w-[81%]  ">
-            <div class="self-stretch  px-8 flex-col justify-start items-start gap-6 flex ">
+            <div class="self-stretch  flex-col justify-start items-start gap-4 flex ">
               <div class="justify-center items-center gap-2 inline-flex">
                 <div class="w-5 h-5 relative"><img src="Assets/ArrowLeft.png" alt="">
                 </div>
@@ -23,7 +23,7 @@
               </div>
               <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
                 <div class="self-stretch justify-start items-start gap-4 inline-flex">
-                  <div class="grow shrink basis-0 flex-col justify-start items-start gap-5 inline-flex ">
+                  <div class="grow shrink basis-0 flex-col justify-start items-start  inline-flex ">
                     <div class="self-stretch text-gray-900 text-3xl font-semibold leading-[38px]">Profile</div>
                     <div class="self-stretch text-slate-600 text-base font-normal leading-normal  border-b border-[#EAECF0] pb-5">Lörem ipsum tin ses. Talpenna retrenera tinening semitris. Rod karosam, kvasir antev. </div>
                   </div>
@@ -31,7 +31,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[81%]   px-8 left-[19%] top-48 absolute flex-col justify-start items-start gap-5 inline-flex divide-y divide-gray-[#EAECF0] pt-5">
+          <div class="w-[81%]    left-[19%] top-44 absolute flex-col justify-start items-start gap-5 inline-flex divide-y divide-gray-[#EAECF0] pt-2">
             <div class="self-stretch  flex-col justify-start items-start gap-6 flex">
               <div class="self-stretch h-14 flex-col justify-start items-start gap-5 flex">
                 <div class="self-stretch justify-start items-start gap-4 inline-flex">
@@ -40,38 +40,8 @@
                     <div class="self-stretch text-slate-600 text-base font-normal leading-normal">Lörem ipsum tin ses. Rod karosam, kvasir antev. </div>
                   </div>
                 </div>
-              </div><!--
-              <div class="self-stretch  flex-col justify-start items-start gap-5 flex border-b border-[#EAECF0]">
-                <div class="self-stretch  flex-col justify-start items-start gap-5 flex">
-                  <div class="justify-start items-start inline-flex">
-                    <div class=" text-slate-700 text-sm font-medium leading-tight">Full Name</div>
-                    <div class="left-[36%] grow shrink basis-0 text-slate-600 text-sm font-normal leading-tight">Nicole Musundi</div>
-                  </div>
-                  <div class="justify-start items-center gap-2.5 inline-flex">
-                    <div class="justify-start items-start flex">
-                      <div class=" text-slate-700 text-sm font-medium leading-tight">Phone Number</div>
-                      <div class="left-[36%] text-slate-600 text-sm font-normal leading-tight">07*****038</div>
-                    </div>
-                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
-                  </div>
-                  <div class="justify-start items-center gap-2.5 inline-flex">
-                    <div class="justify-start items-start flex">
-                      <div class=" text-slate-700 text-sm font-medium leading-tight">Email Address</div>
-                      <div class=" text-slate-600 text-sm font-normal leading-tight">n********ndi@gmail.com</div>
-                    </div>
-                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
-                  </div>
-                  <div class="justify-start items-center gap-2.5 inline-flex">
-                    <div class="justify-start items-start flex">
-                      <div class=" text-slate-700 text-sm font-medium leading-tight">Password</div>
-                      <div class=" text-slate-600 text-base font-normal leading-tight tracking-[3.04px]">********</div>
-                    </div>
-                    <div class="text-blue-700 text-sm font-semibold leading-normal">Change</div>
-                  </div>
-                </div>
-                <div class="self-stretch h-px bg-gray-200"></div>
-              </div>-->
-              <div class="inline-flex gap-x-6 md:gap-x-16">
+              </div>
+              <div class="inline-flex gap-x-8 md:gap-x-16">
                 <div class="whitespace-nowrap">
                   <p class="pb-4  text-slate-700 text-sm font-medium leading-tight ">Full Name</p>
                   <p class="pb-4  text-slate-700 text-sm font-medium leading-tight ">Phone Number</p>
@@ -84,12 +54,52 @@
                   <p class="pb-4  text-slate-600 text-sm font-normal leading-tight  sm:pl-10">n********ndi@gmail.com</p>
                   <p class=" text-slate-600 text-base font-normal leading-tight  sm:pl-10">********</p>
                  </div>
-                <div class="">
-                  <p class="pb-4 text-white text-sm font-thin leading-tight ">change</p>
+                <div class="hidden md:block">
+                  <p class="pb-4 text-blue-700 text-sm font-semibold leading-tight ">Change</p>
                   <p class="pb-4 text-blue-700 text-sm font-semibold leading-tight ">Change</p>
                   <p class="pb-4 text-blue-700 text-sm font-semibold leading-tight ">Change</p>
                   <p class="text-blue-700 text-sm font-semibold leading-tight ">Change</p>
                 </div>
+                <div class="md:hidden -mt-3">
+                  <p><button class="p-2 text-gray-600 hover:text-brand-600">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                            stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button></p>
+                <p><button class="p-2 text-gray-600 hover:text-brand-600">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                          d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                          stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                  </svg>
+              </button></p>
+              <p><button class="p-2 text-gray-600 hover:text-brand-600">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                        stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </button></p>
+            <p><button class="p-2 text-gray-600 hover:text-brand-600">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                      d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                      stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                      stroke-linejoin="round"></path>
+              </svg>
+          </button></p>
+
+                </div>
+
                 
               </div>
             </div>
@@ -103,7 +113,7 @@
                 </div>
               </div>
               <div class="self-stretch flex-col justify-start items-start gap-5 flex ">
-                <div class="inline-flex gap-x-2 md:gap-x-16">
+                <div class="inline-flex gap-x-2 sm:gap-x-10 md:gap-x-16">
                   <div class="whitespace-nowrap">
                     <p class="pb-4  text-slate-700 text-sm font-medium leading-tight ">Organisation Name</p>
                     <p class="  text-slate-700 text-sm font-medium leading-tight ">Type of Organisation</p>
@@ -114,13 +124,36 @@
                     <p class="  text-slate-600 text-sm font-normal leading-tight  ">Chama</p>
                     
                    </div>
-                  <div class="">
+                  <div class="hidden md:block">
+                    <p class= "pb-4 text-blue-700 text-sm font-semibold leading-tight pl-11">Change</p>
                     <p class= "text-blue-700 text-sm font-semibold leading-tight pl-11">Change</p>
+
                     
+                  </div>
+                  <div class="md:hidden pl-12 sm:pl-7 -mt-3">
+                    <p><button class="p-2  text-gray-600 hover:text-brand-600">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                              stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                      </svg>
+                  </button></p>
+                  <p><button class="p-2  text-gray-600 hover:text-brand-600">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.39686 15.0964C2.43515 14.7518 2.45429 14.5795 2.50642 14.4185C2.55268 14.2756 2.61802 14.1397 2.70069 14.0143C2.79388 13.873 2.91645 13.7504 3.1616 13.5053L14.1669 2.50005C15.0873 1.57957 16.5797 1.57957 17.5002 2.50005C18.4207 3.42052 18.4207 4.91291 17.5002 5.83338L6.49493 16.8386C6.24978 17.0838 6.12721 17.2063 5.9859 17.2995C5.86054 17.3822 5.72457 17.4475 5.5817 17.4938C5.42067 17.5459 5.24838 17.5651 4.9038 17.6033L2.0835 17.9167L2.39686 15.0964Z"
+                            stroke="currentColor" stroke-width="1.66667" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button></p>
                   </div>
                   
                 </div>
                 <div class="self-stretch h-px bg-gray-200 border-b border-[#EAECF0]"></div>
+                
               </div>
             </div>
           </div>
